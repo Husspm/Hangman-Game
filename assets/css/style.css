@@ -1,0 +1,9 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: sans-serif;
+	margin: 60px 40px 60px 40px;
+}
+#print {
+	font-size: 33px;
+}
