@@ -1,4 +1,4 @@
-var word = ["Piano", "Guitar", "Drums", "Bass", "Violin", "Cello", "Tuba", "Saxophone", "Trumpet"];
+var word = ["Bass"];
 console.log(word);
 console.log(word.length);
 function play(){
@@ -10,12 +10,21 @@ var blank = " ";
 var space = guess.length * blank.length;
 var i;
 for (i = 0; i < space; i++) {
-blank +="_" + " ";
+blank ="_" + " ";
 document.getElementById('print').innerHTML=(blank);	
-}
-}
 document.onkeyup = function(event){
-	var playerGuess= event.key;
-	var playerGuess=playerGuess.toLowerCase();
-	console.log(playerGuess);
-} 
+var playerGuess= event.key;
+var playerGuess=playerGuess.toLowerCase();
+for (var x = 0; x< letters.length; x++){
+var check = letters[x].indexOf(playerGuess);
+console.log(playerGuess);
+console.log(check);
+if (check == -1 ) {
+	document.getElementById('wrong').innerHTML=(playerGuess);
+}
+else 
+document.getElementById('letter').innerHTML=(playerGuess);
+}
+}
+}
+}

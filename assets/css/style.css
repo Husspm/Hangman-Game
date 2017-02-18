@@ -1,9 +1,32 @@
 body {
-	background-color: black;
-	color: white;
-	font-family: sans-serif;
-	margin: 60px 40px 60px 40px;
+background-image:linear-gradient( to bottom right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)) ,url(../images/block2.png);
+}
+.headline {
+	border: 20px solid;
+	border-image: url(../images/block3.png) 20 round;
+	padding: 5px 0 15px 0;
+	margin-top: 40px;
+	width: 65%;
+	text-align: center;
+	background-color: white;
+}
+#letter {
+	font-size: 40px;
+	border-bottom: 2px solid black;
 }
 #print {
-	font-size: 33px;
+	font-size: 45px;
+}
+.main-body{
+	border: 20px solid;
+	border-image: url(../images/block3.png) 20 round;
+	border-radius: 10px;
+	height: 400px;
+	margin-top: 60px;
+	background-color: white;
+}
+button {
+	padding: 10px 10px 10px 10px;
+	border-radius: 6px;
+	box-shadow: inset 0px 0px 1px black;
 }
